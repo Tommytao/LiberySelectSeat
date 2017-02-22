@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>LiberySelectSeat.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>654228CA1E5DBE2100CE285C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654228E61E5DBE2200CE285C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654228F11E5DBE2200CE285C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

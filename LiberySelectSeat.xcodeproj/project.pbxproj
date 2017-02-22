@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		654228D01E5DBE2200CE285C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228CF1E5DBE2200CE285C /* main.m */; };
+		654228D31E5DBE2200CE285C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228D21E5DBE2200CE285C /* AppDelegate.m */; };
+		654228D61E5DBE2200CE285C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228D51E5DBE2200CE285C /* ViewController.m */; };
+		654228D91E5DBE2200CE285C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654228D71E5DBE2200CE285C /* Main.storyboard */; };
+		654228DC1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 654228DA1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodeld */; };
+		654228DE1E5DBE2200CE285C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654228DD1E5DBE2200CE285C /* Assets.xcassets */; };
+		654228E11E5DBE2200CE285C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654228DF1E5DBE2200CE285C /* LaunchScreen.storyboard */; };
+		654228EC1E5DBE2200CE285C /* LiberySelectSeatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228EB1E5DBE2200CE285C /* LiberySelectSeatTests.m */; };
+		654228F71E5DBE2200CE285C /* LiberySelectSeatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228F61E5DBE2200CE285C /* LiberySelectSeatUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		654228E81E5DBE2200CE285C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 654228C31E5DBE2100CE285C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 654228CA1E5DBE2100CE285C;
+			remoteInfo = LiberySelectSeat;
+		};
+		654228F31E5DBE2200CE285C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 654228C31E5DBE2100CE285C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 654228CA1E5DBE2100CE285C;
+			remoteInfo = LiberySelectSeat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		654228CB1E5DBE2200CE285C /* LiberySelectSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiberySelectSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		654228CF1E5DBE2200CE285C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		654228D11E5DBE2200CE285C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		654228D21E5DBE2200CE285C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		654228D41E5DBE2200CE285C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		654228D51E5DBE2200CE285C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		654228D81E5DBE2200CE285C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		654228DB1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LiberySelectSeat.xcdatamodel; sourceTree = "<group>"; };
+		654228DD1E5DBE2200CE285C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		654228E01E5DBE2200CE285C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		654228E21E5DBE2200CE285C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		654228E71E5DBE2200CE285C /* LiberySelectSeatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiberySelectSeatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		654228EB1E5DBE2200CE285C /* LiberySelectSeatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiberySelectSeatTests.m; sourceTree = "<group>"; };
+		654228ED1E5DBE2200CE285C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		654228F21E5DBE2200CE285C /* LiberySelectSeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiberySelectSeatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		654228F61E5DBE2200CE285C /* LiberySelectSeatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiberySelectSeatUITests.m; sourceTree = "<group>"; };
+		654228F81E5DBE2200CE285C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		654228C81E5DBE2100CE285C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654228E41E5DBE2200CE285C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654228EF1E5DBE2200CE285C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		654228C21E5DBE2100CE285C = {
+			isa = PBXGroup;
+			children = (
+				654228CD1E5DBE2200CE285C /* LiberySelectSeat */,
+				654228EA1E5DBE2200CE285C /* LiberySelectSeatTests */,
+				654228F51E5DBE2200CE285C /* LiberySelectSeatUITests */,
+				654228CC1E5DBE2200CE285C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		654228CC1E5DBE2200CE285C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				654228CB1E5DBE2200CE285C /* LiberySelectSeat.app */,
+				654228E71E5DBE2200CE285C /* LiberySelectSeatTests.xctest */,
+				654228F21E5DBE2200CE285C /* LiberySelectSeatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		654228CD1E5DBE2200CE285C /* LiberySelectSeat */ = {
+			isa = PBXGroup;
+			children = (
+				654228D11E5DBE2200CE285C /* AppDelegate.h */,
+				654228D21E5DBE2200CE285C /* AppDelegate.m */,
+				654228D41E5DBE2200CE285C /* ViewController.h */,
+				654228D51E5DBE2200CE285C /* ViewController.m */,
+				654228D71E5DBE2200CE285C /* Main.storyboard */,
+				654228DD1E5DBE2200CE285C /* Assets.xcassets */,
+				654228DF1E5DBE2200CE285C /* LaunchScreen.storyboard */,
+				654228E21E5DBE2200CE285C /* Info.plist */,
+				654228DA1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodeld */,
+				654228CE1E5DBE2200CE285C /* Supporting Files */,
+			);
+			path = LiberySelectSeat;
+			sourceTree = "<group>";
+		};
+		654228CE1E5DBE2200CE285C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				654228CF1E5DBE2200CE285C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		654228EA1E5DBE2200CE285C /* LiberySelectSeatTests */ = {
+			isa = PBXGroup;
+			children = (
+				654228EB1E5DBE2200CE285C /* LiberySelectSeatTests.m */,
+				654228ED1E5DBE2200CE285C /* Info.plist */,
+			);
+			path = LiberySelectSeatTests;
+			sourceTree = "<group>";
+		};
+		654228F51E5DBE2200CE285C /* LiberySelectSeatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				654228F61E5DBE2200CE285C /* LiberySelectSeatUITests.m */,
+				654228F81E5DBE2200CE285C /* Info.plist */,
+			);
+			path = LiberySelectSeatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		654228CA1E5DBE2100CE285C /* LiberySelectSeat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 654228FB1E5DBE2200CE285C /* Build configuration list for PBXNativeTarget "LiberySelectSeat" */;
+			buildPhases = (
+				654228C71E5DBE2100CE285C /* Sources */,
+				654228C81E5DBE2100CE285C /* Frameworks */,
+				654228C91E5DBE2100CE285C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiberySelectSeat;
+			productName = LiberySelectSeat;
+			productReference = 654228CB1E5DBE2200CE285C /* LiberySelectSeat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		654228E61E5DBE2200CE285C /* LiberySelectSeatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 654228FE1E5DBE2200CE285C /* Build configuration list for PBXNativeTarget "LiberySelectSeatTests" */;
+			buildPhases = (
+				654228E31E5DBE2200CE285C /* Sources */,
+				654228E41E5DBE2200CE285C /* Frameworks */,
+				654228E51E5DBE2200CE285C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				654228E91E5DBE2200CE285C /* PBXTargetDependency */,
+			);
+			name = LiberySelectSeatTests;
+			productName = LiberySelectSeatTests;
+			productReference = 654228E71E5DBE2200CE285C /* LiberySelectSeatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		654228F11E5DBE2200CE285C /* LiberySelectSeatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 654229011E5DBE2200CE285C /* Build configuration list for PBXNativeTarget "LiberySelectSeatUITests" */;
+			buildPhases = (
+				654228EE1E5DBE2200CE285C /* Sources */,
+				654228EF1E5DBE2200CE285C /* Frameworks */,
+				654228F01E5DBE2200CE285C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				654228F41E5DBE2200CE285C /* PBXTargetDependency */,
+			);
+			name = LiberySelectSeatUITests;
+			productName = LiberySelectSeatUITests;
+			productReference = 654228F21E5DBE2200CE285C /* LiberySelectSeatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		654228C31E5DBE2100CE285C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Tommy;
+				TargetAttributes = {
+					654228CA1E5DBE2100CE285C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					654228E61E5DBE2200CE285C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 654228CA1E5DBE2100CE285C;
+					};
+					654228F11E5DBE2200CE285C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 654228CA1E5DBE2100CE285C;
+					};
+				};
+			};
+			buildConfigurationList = 654228C61E5DBE2100CE285C /* Build configuration list for PBXProject "LiberySelectSeat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 654228C21E5DBE2100CE285C;
+			productRefGroup = 654228CC1E5DBE2200CE285C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				654228CA1E5DBE2100CE285C /* LiberySelectSeat */,
+				654228E61E5DBE2200CE285C /* LiberySelectSeatTests */,
+				654228F11E5DBE2200CE285C /* LiberySelectSeatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		654228C91E5DBE2100CE285C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654228E11E5DBE2200CE285C /* LaunchScreen.storyboard in Resources */,
+				654228DE1E5DBE2200CE285C /* Assets.xcassets in Resources */,
+				654228D91E5DBE2200CE285C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654228E51E5DBE2200CE285C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654228F01E5DBE2200CE285C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		654228C71E5DBE2100CE285C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654228D61E5DBE2200CE285C /* ViewController.m in Sources */,
+				654228DC1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodeld in Sources */,
+				654228D31E5DBE2200CE285C /* AppDelegate.m in Sources */,
+				654228D01E5DBE2200CE285C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654228E31E5DBE2200CE285C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654228EC1E5DBE2200CE285C /* LiberySelectSeatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654228EE1E5DBE2200CE285C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654228F71E5DBE2200CE285C /* LiberySelectSeatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		654228E91E5DBE2200CE285C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 654228CA1E5DBE2100CE285C /* LiberySelectSeat */;
+			targetProxy = 654228E81E5DBE2200CE285C /* PBXContainerItemProxy */;
+		};
+		654228F41E5DBE2200CE285C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 654228CA1E5DBE2100CE285C /* LiberySelectSeat */;
+			targetProxy = 654228F31E5DBE2200CE285C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		654228D71E5DBE2200CE285C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				654228D81E5DBE2200CE285C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		654228DF1E5DBE2200CE285C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				654228E01E5DBE2200CE285C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		654228F91E5DBE2200CE285C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		654228FA1E5DBE2200CE285C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		654228FC1E5DBE2200CE285C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LiberySelectSeat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		654228FD1E5DBE2200CE285C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LiberySelectSeat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		654228FF1E5DBE2200CE285C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LiberySelectSeatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiberySelectSeat.app/LiberySelectSeat";
+			};
+			name = Debug;
+		};
+		654229001E5DBE2200CE285C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LiberySelectSeatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiberySelectSeat.app/LiberySelectSeat";
+			};
+			name = Release;
+		};
+		654229021E5DBE2200CE285C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LiberySelectSeatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LiberySelectSeat;
+			};
+			name = Debug;
+		};
+		654229031E5DBE2200CE285C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LiberySelectSeatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LiberySelectSeat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		654228C61E5DBE2100CE285C /* Build configuration list for PBXProject "LiberySelectSeat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654228F91E5DBE2200CE285C /* Debug */,
+				654228FA1E5DBE2200CE285C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		654228FB1E5DBE2200CE285C /* Build configuration list for PBXNativeTarget "LiberySelectSeat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654228FC1E5DBE2200CE285C /* Debug */,
+				654228FD1E5DBE2200CE285C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		654228FE1E5DBE2200CE285C /* Build configuration list for PBXNativeTarget "LiberySelectSeatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654228FF1E5DBE2200CE285C /* Debug */,
+				654229001E5DBE2200CE285C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		654229011E5DBE2200CE285C /* Build configuration list for PBXNativeTarget "LiberySelectSeatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654229021E5DBE2200CE285C /* Debug */,
+				654229031E5DBE2200CE285C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		654228DA1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				654228DB1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodel */,
+			);
+			currentVersion = 654228DB1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodel */;
+			path = LiberySelectSeat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 654228C31E5DBE2100CE285C /* Project object */;
+}
