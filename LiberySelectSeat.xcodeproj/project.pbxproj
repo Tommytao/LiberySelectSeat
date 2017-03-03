@@ -16,6 +16,8 @@
 		654228E11E5DBE2200CE285C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654228DF1E5DBE2200CE285C /* LaunchScreen.storyboard */; };
 		654228EC1E5DBE2200CE285C /* LiberySelectSeatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228EB1E5DBE2200CE285C /* LiberySelectSeatTests.m */; };
 		654228F71E5DBE2200CE285C /* LiberySelectSeatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228F61E5DBE2200CE285C /* LiberySelectSeatUITests.m */; };
+		654229051E5DBE4500CE285C /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 654229041E5DBE4500CE285C /* View.xib */; };
+		6DD8CB0525C7E8D6B3F05032 /* libPods-LiberySelectSeat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A56333F4478854C7AE1C5249 /* libPods-LiberySelectSeat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C9410882A364DCB3A92ADAE /* Pods-LiberySelectSeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiberySelectSeat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiberySelectSeat/Pods-LiberySelectSeat.release.xcconfig"; sourceTree = "<group>"; };
+		516E9B822CB1C364681F424C /* Pods-LiberySelectSeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiberySelectSeat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiberySelectSeat/Pods-LiberySelectSeat.debug.xcconfig"; sourceTree = "<group>"; };
 		654228CB1E5DBE2200CE285C /* LiberySelectSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiberySelectSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		654228CF1E5DBE2200CE285C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		654228D11E5DBE2200CE285C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		654228F21E5DBE2200CE285C /* LiberySelectSeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiberySelectSeatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		654228F61E5DBE2200CE285C /* LiberySelectSeatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiberySelectSeatUITests.m; sourceTree = "<group>"; };
 		654228F81E5DBE2200CE285C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		654229041E5DBE4500CE285C /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = View.xib; path = ../View.xib; sourceTree = "<group>"; };
+		A56333F4478854C7AE1C5249 /* libPods-LiberySelectSeat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiberySelectSeat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD8CB0525C7E8D6B3F05032 /* libPods-LiberySelectSeat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2470E15F3461CBE88FC23988 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A56333F4478854C7AE1C5249 /* libPods-LiberySelectSeat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		654228C21E5DBE2100CE285C = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +102,8 @@
 				654228EA1E5DBE2200CE285C /* LiberySelectSeatTests */,
 				654228F51E5DBE2200CE285C /* LiberySelectSeatUITests */,
 				654228CC1E5DBE2200CE285C /* Products */,
+				8AE83E2355D061591D45FE16 /* Pods */,
+				2470E15F3461CBE88FC23988 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +124,7 @@
 				654228D21E5DBE2200CE285C /* AppDelegate.m */,
 				654228D41E5DBE2200CE285C /* ViewController.h */,
 				654228D51E5DBE2200CE285C /* ViewController.m */,
+				654229041E5DBE4500CE285C /* View.xib */,
 				654228D71E5DBE2200CE285C /* Main.storyboard */,
 				654228DD1E5DBE2200CE285C /* Assets.xcassets */,
 				654228DF1E5DBE2200CE285C /* LaunchScreen.storyboard */,
@@ -143,6 +161,15 @@
 			path = LiberySelectSeatUITests;
 			sourceTree = "<group>";
 		};
+		8AE83E2355D061591D45FE16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				516E9B822CB1C364681F424C /* Pods-LiberySelectSeat.debug.xcconfig */,
+				0C9410882A364DCB3A92ADAE /* Pods-LiberySelectSeat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 654228FB1E5DBE2200CE285C /* Build configuration list for PBXNativeTarget "LiberySelectSeat" */;
 			buildPhases = (
+				8729C92A1BAAE5BF8B97FEC6 /* [CP] Check Pods Manifest.lock */,
 				654228C71E5DBE2100CE285C /* Sources */,
 				654228C81E5DBE2100CE285C /* Frameworks */,
 				654228C91E5DBE2100CE285C /* Resources */,
+				770D5BC71797CA5613B58DC7 /* [CP] Embed Pods Frameworks */,
+				4FC1A38019F1F913362AD501 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,6 +240,7 @@
 				TargetAttributes = {
 					654228CA1E5DBE2100CE285C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GYALTS3C8F;
 						ProvisioningStyle = Automatic;
 					};
 					654228E61E5DBE2200CE285C = {
@@ -249,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654229051E5DBE4500CE285C /* View.xib in Resources */,
 				654228E11E5DBE2200CE285C /* LaunchScreen.storyboard in Resources */,
 				654228DE1E5DBE2200CE285C /* Assets.xcassets in Resources */,
 				654228D91E5DBE2200CE285C /* Main.storyboard in Resources */,
@@ -270,6 +302,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FC1A38019F1F913362AD501 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiberySelectSeat/Pods-LiberySelectSeat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		770D5BC71797CA5613B58DC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiberySelectSeat/Pods-LiberySelectSeat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8729C92A1BAAE5BF8B97FEC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		654228C71E5DBE2100CE285C /* Sources */ = {
@@ -424,23 +504,31 @@
 		};
 		654228FC1E5DBE2200CE285C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 516E9B822CB1C364681F424C /* Pods-LiberySelectSeat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GYALTS3C8F;
 				INFOPLIST_FILE = LiberySelectSeat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		654228FD1E5DBE2200CE285C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C9410882A364DCB3A92ADAE /* Pods-LiberySelectSeat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GYALTS3C8F;
 				INFOPLIST_FILE = LiberySelectSeat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -509,6 +597,7 @@
 				654228FD1E5DBE2200CE285C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		654228FE1E5DBE2200CE285C /* Build configuration list for PBXNativeTarget "LiberySelectSeatTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +606,7 @@
 				654229001E5DBE2200CE285C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		654229011E5DBE2200CE285C /* Build configuration list for PBXNativeTarget "LiberySelectSeatUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +615,7 @@
 				654229031E5DBE2200CE285C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

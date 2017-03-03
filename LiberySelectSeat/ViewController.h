@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+-(IBAction)textFieldDoneEditing:(id)sender;
+
 
 @end
 
