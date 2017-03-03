@@ -10,13 +10,20 @@
 		654228D01E5DBE2200CE285C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228CF1E5DBE2200CE285C /* main.m */; };
 		654228D31E5DBE2200CE285C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228D21E5DBE2200CE285C /* AppDelegate.m */; };
 		654228D61E5DBE2200CE285C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228D51E5DBE2200CE285C /* ViewController.m */; };
-		654228D91E5DBE2200CE285C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654228D71E5DBE2200CE285C /* Main.storyboard */; };
 		654228DC1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 654228DA1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodeld */; };
 		654228DE1E5DBE2200CE285C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654228DD1E5DBE2200CE285C /* Assets.xcassets */; };
 		654228E11E5DBE2200CE285C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654228DF1E5DBE2200CE285C /* LaunchScreen.storyboard */; };
 		654228EC1E5DBE2200CE285C /* LiberySelectSeatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228EB1E5DBE2200CE285C /* LiberySelectSeatTests.m */; };
 		654228F71E5DBE2200CE285C /* LiberySelectSeatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228F61E5DBE2200CE285C /* LiberySelectSeatUITests.m */; };
-		654229051E5DBE4500CE285C /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 654229041E5DBE4500CE285C /* View.xib */; };
+		6559C82C1E6955FF00B3F132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6559C82A1E6955FF00B3F132 /* Main.storyboard */; };
+		6559C82D1E6955FF00B3F132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6559C82A1E6955FF00B3F132 /* Main.storyboard */; };
+		6559C82E1E6955FF00B3F132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6559C82A1E6955FF00B3F132 /* Main.storyboard */; };
+		6559C84C1E698D6600B3F132 /* SSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6559C84A1E698D6600B3F132 /* SSViewController.m */; };
+		6559C84D1E698D6600B3F132 /* SSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6559C84A1E698D6600B3F132 /* SSViewController.m */; };
+		6559C84E1E698D6600B3F132 /* SSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6559C84A1E698D6600B3F132 /* SSViewController.m */; };
+		6559C84F1E698D6600B3F132 /* SSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6559C84B1E698D6600B3F132 /* SSViewController.xib */; };
+		6559C8501E698D6600B3F132 /* SSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6559C84B1E698D6600B3F132 /* SSViewController.xib */; };
+		6559C8511E698D6600B3F132 /* SSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6559C84B1E698D6600B3F132 /* SSViewController.xib */; };
 		6DD8CB0525C7E8D6B3F05032 /* libPods-LiberySelectSeat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A56333F4478854C7AE1C5249 /* libPods-LiberySelectSeat.a */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +53,6 @@
 		654228D21E5DBE2200CE285C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		654228D41E5DBE2200CE285C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		654228D51E5DBE2200CE285C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		654228D81E5DBE2200CE285C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		654228DB1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LiberySelectSeat.xcdatamodel; sourceTree = "<group>"; };
 		654228DD1E5DBE2200CE285C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		654228E01E5DBE2200CE285C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,7 +63,10 @@
 		654228F21E5DBE2200CE285C /* LiberySelectSeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiberySelectSeatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		654228F61E5DBE2200CE285C /* LiberySelectSeatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiberySelectSeatUITests.m; sourceTree = "<group>"; };
 		654228F81E5DBE2200CE285C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		654229041E5DBE4500CE285C /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = View.xib; path = ../View.xib; sourceTree = "<group>"; };
+		6559C82B1E6955FF00B3F132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6559C8491E698D6600B3F132 /* SSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSViewController.h; sourceTree = "<group>"; };
+		6559C84A1E698D6600B3F132 /* SSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSViewController.m; sourceTree = "<group>"; };
+		6559C84B1E698D6600B3F132 /* SSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSViewController.xib; sourceTree = "<group>"; };
 		A56333F4478854C7AE1C5249 /* libPods-LiberySelectSeat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiberySelectSeat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -124,13 +133,15 @@
 				654228D21E5DBE2200CE285C /* AppDelegate.m */,
 				654228D41E5DBE2200CE285C /* ViewController.h */,
 				654228D51E5DBE2200CE285C /* ViewController.m */,
-				654229041E5DBE4500CE285C /* View.xib */,
-				654228D71E5DBE2200CE285C /* Main.storyboard */,
 				654228DD1E5DBE2200CE285C /* Assets.xcassets */,
 				654228DF1E5DBE2200CE285C /* LaunchScreen.storyboard */,
+				6559C82A1E6955FF00B3F132 /* Main.storyboard */,
 				654228E21E5DBE2200CE285C /* Info.plist */,
 				654228DA1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodeld */,
 				654228CE1E5DBE2200CE285C /* Supporting Files */,
+				6559C8491E698D6600B3F132 /* SSViewController.h */,
+				6559C84A1E698D6600B3F132 /* SSViewController.m */,
+				6559C84B1E698D6600B3F132 /* SSViewController.xib */,
 			);
 			path = LiberySelectSeat;
 			sourceTree = "<group>";
@@ -280,10 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				654229051E5DBE4500CE285C /* View.xib in Resources */,
+				6559C82C1E6955FF00B3F132 /* Main.storyboard in Resources */,
 				654228E11E5DBE2200CE285C /* LaunchScreen.storyboard in Resources */,
+				6559C84F1E698D6600B3F132 /* SSViewController.xib in Resources */,
 				654228DE1E5DBE2200CE285C /* Assets.xcassets in Resources */,
-				654228D91E5DBE2200CE285C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +302,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6559C8501E698D6600B3F132 /* SSViewController.xib in Resources */,
+				6559C82D1E6955FF00B3F132 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +311,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6559C8511E698D6600B3F132 /* SSViewController.xib in Resources */,
+				6559C82E1E6955FF00B3F132 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +373,7 @@
 			files = (
 				654228D61E5DBE2200CE285C /* ViewController.m in Sources */,
 				654228DC1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodeld in Sources */,
+				6559C84C1E698D6600B3F132 /* SSViewController.m in Sources */,
 				654228D31E5DBE2200CE285C /* AppDelegate.m in Sources */,
 				654228D01E5DBE2200CE285C /* main.m in Sources */,
 			);
@@ -367,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6559C84D1E698D6600B3F132 /* SSViewController.m in Sources */,
 				654228EC1E5DBE2200CE285C /* LiberySelectSeatTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6559C84E1E698D6600B3F132 /* SSViewController.m in Sources */,
 				654228F71E5DBE2200CE285C /* LiberySelectSeatUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,20 +413,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		654228D71E5DBE2200CE285C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				654228D81E5DBE2200CE285C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		654228DF1E5DBE2200CE285C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				654228E01E5DBE2200CE285C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6559C82A1E6955FF00B3F132 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6559C82B1E6955FF00B3F132 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
