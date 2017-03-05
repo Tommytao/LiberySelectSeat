@@ -24,6 +24,18 @@
 		6559C84F1E698D6600B3F132 /* SSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6559C84B1E698D6600B3F132 /* SSViewController.xib */; };
 		6559C8501E698D6600B3F132 /* SSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6559C84B1E698D6600B3F132 /* SSViewController.xib */; };
 		6559C8511E698D6600B3F132 /* SSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6559C84B1E698D6600B3F132 /* SSViewController.xib */; };
+		6559C85A1E6C493D00B3F132 /* desk512.png in Resources */ = {isa = PBXBuildFile; fileRef = 6559C8591E6C493D00B3F132 /* desk512.png */; };
+		6559C85B1E6C493D00B3F132 /* desk512.png in Resources */ = {isa = PBXBuildFile; fileRef = 6559C8591E6C493D00B3F132 /* desk512.png */; };
+		6559C85C1E6C493D00B3F132 /* desk512.png in Resources */ = {isa = PBXBuildFile; fileRef = 6559C8591E6C493D00B3F132 /* desk512.png */; };
+		6559C85E1E6C528300B3F132 /* chair15.png in Resources */ = {isa = PBXBuildFile; fileRef = 6559C85D1E6C528300B3F132 /* chair15.png */; };
+		6559C85F1E6C528300B3F132 /* chair15.png in Resources */ = {isa = PBXBuildFile; fileRef = 6559C85D1E6C528300B3F132 /* chair15.png */; };
+		6559C8601E6C528300B3F132 /* chair15.png in Resources */ = {isa = PBXBuildFile; fileRef = 6559C85D1E6C528300B3F132 /* chair15.png */; };
+		6559C8641E6C62FC00B3F132 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6559C8621E6C62FC00B3F132 /* UserInfoViewController.m */; };
+		6559C8651E6C62FC00B3F132 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6559C8621E6C62FC00B3F132 /* UserInfoViewController.m */; };
+		6559C8661E6C62FC00B3F132 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6559C8621E6C62FC00B3F132 /* UserInfoViewController.m */; };
+		6559C8671E6C62FC00B3F132 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6559C8631E6C62FC00B3F132 /* UserInfoViewController.xib */; };
+		6559C8681E6C62FC00B3F132 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6559C8631E6C62FC00B3F132 /* UserInfoViewController.xib */; };
+		6559C8691E6C62FC00B3F132 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6559C8631E6C62FC00B3F132 /* UserInfoViewController.xib */; };
 		6DD8CB0525C7E8D6B3F05032 /* libPods-LiberySelectSeat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A56333F4478854C7AE1C5249 /* libPods-LiberySelectSeat.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +79,11 @@
 		6559C8491E698D6600B3F132 /* SSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSViewController.h; sourceTree = "<group>"; };
 		6559C84A1E698D6600B3F132 /* SSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSViewController.m; sourceTree = "<group>"; };
 		6559C84B1E698D6600B3F132 /* SSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSViewController.xib; sourceTree = "<group>"; };
+		6559C8591E6C493D00B3F132 /* desk512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desk512.png; sourceTree = "<group>"; };
+		6559C85D1E6C528300B3F132 /* chair15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chair15.png; sourceTree = "<group>"; };
+		6559C8611E6C62FC00B3F132 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		6559C8621E6C62FC00B3F132 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		6559C8631E6C62FC00B3F132 /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
 		A56333F4478854C7AE1C5249 /* libPods-LiberySelectSeat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiberySelectSeat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,6 +124,7 @@
 		654228C21E5DBE2100CE285C = {
 			isa = PBXGroup;
 			children = (
+				6559C8541E6C47F000B3F132 /* source */,
 				654228CD1E5DBE2200CE285C /* LiberySelectSeat */,
 				654228EA1E5DBE2200CE285C /* LiberySelectSeatTests */,
 				654228F51E5DBE2200CE285C /* LiberySelectSeatUITests */,
@@ -142,6 +160,9 @@
 				6559C8491E698D6600B3F132 /* SSViewController.h */,
 				6559C84A1E698D6600B3F132 /* SSViewController.m */,
 				6559C84B1E698D6600B3F132 /* SSViewController.xib */,
+				6559C8611E6C62FC00B3F132 /* UserInfoViewController.h */,
+				6559C8621E6C62FC00B3F132 /* UserInfoViewController.m */,
+				6559C8631E6C62FC00B3F132 /* UserInfoViewController.xib */,
 			);
 			path = LiberySelectSeat;
 			sourceTree = "<group>";
@@ -170,6 +191,15 @@
 				654228F81E5DBE2200CE285C /* Info.plist */,
 			);
 			path = LiberySelectSeatUITests;
+			sourceTree = "<group>";
+		};
+		6559C8541E6C47F000B3F132 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				6559C8591E6C493D00B3F132 /* desk512.png */,
+				6559C85D1E6C528300B3F132 /* chair15.png */,
+			);
+			name = source;
 			sourceTree = "<group>";
 		};
 		8AE83E2355D061591D45FE16 /* Pods */ = {
@@ -293,8 +323,11 @@
 			files = (
 				6559C82C1E6955FF00B3F132 /* Main.storyboard in Resources */,
 				654228E11E5DBE2200CE285C /* LaunchScreen.storyboard in Resources */,
+				6559C8671E6C62FC00B3F132 /* UserInfoViewController.xib in Resources */,
 				6559C84F1E698D6600B3F132 /* SSViewController.xib in Resources */,
+				6559C85E1E6C528300B3F132 /* chair15.png in Resources */,
 				654228DE1E5DBE2200CE285C /* Assets.xcassets in Resources */,
+				6559C85A1E6C493D00B3F132 /* desk512.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +335,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6559C85B1E6C493D00B3F132 /* desk512.png in Resources */,
 				6559C8501E698D6600B3F132 /* SSViewController.xib in Resources */,
+				6559C8681E6C62FC00B3F132 /* UserInfoViewController.xib in Resources */,
 				6559C82D1E6955FF00B3F132 /* Main.storyboard in Resources */,
+				6559C85F1E6C528300B3F132 /* chair15.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +347,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6559C85C1E6C493D00B3F132 /* desk512.png in Resources */,
 				6559C8511E698D6600B3F132 /* SSViewController.xib in Resources */,
+				6559C8691E6C62FC00B3F132 /* UserInfoViewController.xib in Resources */,
 				6559C82E1E6955FF00B3F132 /* Main.storyboard in Resources */,
+				6559C8601E6C528300B3F132 /* chair15.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +415,7 @@
 				6559C84C1E698D6600B3F132 /* SSViewController.m in Sources */,
 				654228D31E5DBE2200CE285C /* AppDelegate.m in Sources */,
 				654228D01E5DBE2200CE285C /* main.m in Sources */,
+				6559C8641E6C62FC00B3F132 /* UserInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +425,7 @@
 			files = (
 				6559C84D1E698D6600B3F132 /* SSViewController.m in Sources */,
 				654228EC1E5DBE2200CE285C /* LiberySelectSeatTests.m in Sources */,
+				6559C8651E6C62FC00B3F132 /* UserInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +435,7 @@
 			files = (
 				6559C84E1E698D6600B3F132 /* SSViewController.m in Sources */,
 				654228F71E5DBE2200CE285C /* LiberySelectSeatUITests.m in Sources */,
+				6559C8661E6C62FC00B3F132 /* UserInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

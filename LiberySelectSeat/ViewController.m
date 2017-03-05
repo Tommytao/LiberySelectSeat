@@ -31,15 +31,6 @@
     _nameField.placeholder = @"name";
     _passwordField.placeholder=@"password";
     _passwordField.secureTextEntry = YES;
-//    
-//    UIButton *Loginbtn = [[UIButton alloc] initWithFrame:CGRectMake(100, kScreenHeight/1.5, kScreenWidth-100*2, 30)];
-//    Loginbtn.backgroundColor = [UIColor whiteColor];
-//    [Loginbtn setTitle:@"login" forState:UIControlStateNormal];
-//    [Loginbtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-//    [Loginbtn addTarget:self action:@selector(loadWebRequest:) forControlEvents:UIControlEventTouchUpInside];
-//    
-//    [self.view addSubview:Loginbtn];
-    
 
     }
 
@@ -53,16 +44,9 @@
 {
     NSString *username = _nameField.text;
     NSString *password = _passwordField.text;
-    NSString *urlhead  =@"http://127.0.0.1:9090/search?name=";
+    NSString *urlhead  =@"http://192.168.1.101:9090/Login?name=";
     NSString *urlstring = [NSString stringWithFormat:@"%@&password=%@",username,password];
     NSString *urltext = [NSString stringWithFormat:@"%@%@",urlhead,urlstring];
-//    //NSLog(@"%@",urltext);
-//    NSURL *url = [NSURL URLWithString:urltext];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-//    [request  setHTTPMethod:@"GET"];
-//    NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:request delegate:self];
-//    [connection start];
-    
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
@@ -101,37 +85,6 @@
         
     }
 }
-//
-//-(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
-//{
-//    NSLog(@"%@",response);
-//}
-////接收网络数据
-//-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-//{
-//    if (receiveData_ == nil){
-//        receiveData_ = [[NSMutableData alloc] init];
-//    }
-//    [receiveData_ appendData:data];
-//    
-//    id obj = [NSJSONSerialization JSONObjectWithData:receiveData_ options:0 error:nil];
-//    //NSLog(@"%@",obj);
-//    if([obj isKindOfClass:[NSDictionary class]])
-//    {
-//        NSString *userid = [(NSDictionary *)obj objectForKey:@"id"];
-//        if(userid !=nil){
-//            
-//            NSLog(@"登录成功");
-//            UIAlertView *alert = [[UIAlertView alloc]
-//                                  
-//                                  initWithTitle:@"提示" message:@"登录成功！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-//            [alert show];
-//
-//        }
-//
-//    }
-//}
-
 
 -(IBAction)textFieldDoneEditing:(id)sender{
     [sender resignFirstResponder];
