@@ -55,6 +55,17 @@
     }];
 }
 
+- (IBAction)Timebtn1:(UIButton *)sender {
+}
+
+
+- (IBAction)Timabtn2:(UIButton *)sender {
+}
+
+- (IBAction)Timebtn3:(UIButton *)sender {
+}
+
+
 - (IBAction)SBtn1:(UIButton *)sender {
 
 
