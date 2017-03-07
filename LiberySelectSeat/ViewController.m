@@ -89,11 +89,13 @@
 -(IBAction)textFieldDoneEditing:(id)sender{
     [sender resignFirstResponder];
     
+    
 }
 
 -(IBAction)backgroundTap:(id)sender
 {
-    
+    [self.nameField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
 }
 
 - (IBAction)Login:(UIButton *)sender {

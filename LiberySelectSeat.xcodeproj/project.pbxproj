@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65254F6B1E6EF6C600BAEB52 /* ScanQR.m in Sources */ = {isa = PBXBuildFile; fileRef = 65254F691E6EF6C600BAEB52 /* ScanQR.m */; };
+		65254F6C1E6EF6C600BAEB52 /* ScanQR.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65254F6A1E6EF6C600BAEB52 /* ScanQR.xib */; };
+		65254F6E1E6EF83C00BAEB52 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65254F6D1E6EF83C00BAEB52 /* AVFoundation.framework */; };
 		654228D01E5DBE2200CE285C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228CF1E5DBE2200CE285C /* main.m */; };
 		654228D31E5DBE2200CE285C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228D21E5DBE2200CE285C /* AppDelegate.m */; };
 		654228D61E5DBE2200CE285C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228D51E5DBE2200CE285C /* ViewController.m */; };
@@ -59,6 +62,10 @@
 /* Begin PBXFileReference section */
 		0C9410882A364DCB3A92ADAE /* Pods-LiberySelectSeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiberySelectSeat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiberySelectSeat/Pods-LiberySelectSeat.release.xcconfig"; sourceTree = "<group>"; };
 		516E9B822CB1C364681F424C /* Pods-LiberySelectSeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiberySelectSeat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiberySelectSeat/Pods-LiberySelectSeat.debug.xcconfig"; sourceTree = "<group>"; };
+		65254F681E6EF6C600BAEB52 /* ScanQR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQR.h; sourceTree = "<group>"; };
+		65254F691E6EF6C600BAEB52 /* ScanQR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQR.m; sourceTree = "<group>"; };
+		65254F6A1E6EF6C600BAEB52 /* ScanQR.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQR.xib; sourceTree = "<group>"; };
+		65254F6D1E6EF83C00BAEB52 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		654228CB1E5DBE2200CE285C /* LiberySelectSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiberySelectSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		654228CF1E5DBE2200CE285C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		654228D11E5DBE2200CE285C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65254F6E1E6EF83C00BAEB52 /* AVFoundation.framework in Frameworks */,
 				6DD8CB0525C7E8D6B3F05032 /* libPods-LiberySelectSeat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +124,7 @@
 		2470E15F3461CBE88FC23988 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65254F6D1E6EF83C00BAEB52 /* AVFoundation.framework */,
 				A56333F4478854C7AE1C5249 /* libPods-LiberySelectSeat.a */,
 			);
 			name = Frameworks;
@@ -156,13 +165,16 @@
 				6559C82A1E6955FF00B3F132 /* Main.storyboard */,
 				654228E21E5DBE2200CE285C /* Info.plist */,
 				654228DA1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodeld */,
-				654228CE1E5DBE2200CE285C /* Supporting Files */,
 				6559C8491E698D6600B3F132 /* SSViewController.h */,
 				6559C84A1E698D6600B3F132 /* SSViewController.m */,
 				6559C84B1E698D6600B3F132 /* SSViewController.xib */,
 				6559C8611E6C62FC00B3F132 /* UserInfoViewController.h */,
 				6559C8621E6C62FC00B3F132 /* UserInfoViewController.m */,
 				6559C8631E6C62FC00B3F132 /* UserInfoViewController.xib */,
+				65254F681E6EF6C600BAEB52 /* ScanQR.h */,
+				65254F691E6EF6C600BAEB52 /* ScanQR.m */,
+				65254F6A1E6EF6C600BAEB52 /* ScanQR.xib */,
+				654228CE1E5DBE2200CE285C /* Supporting Files */,
 			);
 			path = LiberySelectSeat;
 			sourceTree = "<group>";
@@ -324,6 +336,7 @@
 				6559C82C1E6955FF00B3F132 /* Main.storyboard in Resources */,
 				654228E11E5DBE2200CE285C /* LaunchScreen.storyboard in Resources */,
 				6559C8671E6C62FC00B3F132 /* UserInfoViewController.xib in Resources */,
+				65254F6C1E6EF6C600BAEB52 /* ScanQR.xib in Resources */,
 				6559C84F1E698D6600B3F132 /* SSViewController.xib in Resources */,
 				6559C85E1E6C528300B3F132 /* chair15.png in Resources */,
 				654228DE1E5DBE2200CE285C /* Assets.xcassets in Resources */,
@@ -410,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65254F6B1E6EF6C600BAEB52 /* ScanQR.m in Sources */,
 				654228D61E5DBE2200CE285C /* ViewController.m in Sources */,
 				654228DC1E5DBE2200CE285C /* LiberySelectSeat.xcdatamodeld in Sources */,
 				6559C84C1E698D6600B3F132 /* SSViewController.m in Sources */,

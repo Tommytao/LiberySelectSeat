@@ -8,8 +8,12 @@
 
 #import "UserInfoViewController.h"
 #import "SSViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import "ScanQR.h"
+#define kScreenWidth [[UIScreen mainScreen]bounds].size.width
+#define kScreenHeight [[UIScreen mainScreen]bounds].size.height
+@interface UserInfoViewController()
 
-@interface UserInfoViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *userinfolabel;
 @property (strong, nonatomic) IBOutlet UILabel *NameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *seatIDLabel;
@@ -34,15 +38,11 @@
         //跳转完成后需要执行的事件；
     }];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)SignSeat:(UIButton *)sender {
+    [self presentViewController:[[ScanQR alloc] init] animated:true completion:^{
+        //跳转完成后需要执行的事件；
+    }];
 }
-*/
+
 
 @end
