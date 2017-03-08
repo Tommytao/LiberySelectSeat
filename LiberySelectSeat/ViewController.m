@@ -81,7 +81,6 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (alertView.tag == 1) {
-        NSLog(@"此处跳转");
         [self presentViewController:[[SSViewController alloc] init] animated:true completion:^{
             //跳转完成后需要执行的事件；
         }];
