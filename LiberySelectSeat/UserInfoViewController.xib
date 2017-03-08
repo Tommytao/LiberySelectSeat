@@ -14,8 +14,11 @@
                 <outlet property="NameLabel" destination="9I2-la-NLA" id="Tx1-XS-hSk"/>
                 <outlet property="TimeLabel" destination="pdi-CF-zKq" id="FmM-ZG-xkG"/>
                 <outlet property="seatIDLabel" destination="sAU-Tz-m8D" id="0Jg-q9-ZQ0"/>
+                <outlet property="seatIDinfo" destination="fTB-yf-tZH" id="U8t-Rs-AaA"/>
                 <outlet property="seatStateLabel" destination="24Z-Zn-hzk" id="iq2-P1-eRg"/>
-                <outlet property="userinfolabel" destination="23y-p0-kht" id="iyH-pG-sRV"/>
+                <outlet property="stateinfo" destination="OFw-re-lzh" id="3gK-qF-uu1"/>
+                <outlet property="timeinfo" destination="hkD-zJ-iou" id="qjt-cq-4v6"/>
+                <outlet property="userinfolabel" destination="23y-p0-kht" id="Hlx-bG-6yU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -110,7 +113,7 @@
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="34" y="53"/>
+            <point key="canvasLocation" x="3" y="-17"/>
         </view>
     </objects>
 </document>

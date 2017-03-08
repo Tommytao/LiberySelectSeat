@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self.view endEditing:YES];
     //获取网络数据
     
 
