@@ -52,32 +52,32 @@
             NSString *name = [(NSDictionary *)responseObject objectForKey:@"name"];
             _NameLabel.text = name;
             NSLog(@"%@",state);
-            //int stateint = [state intValue];
-            //int adtiment = [adtime intValue];
+            int stateint = [state intValue];
+            int adtiment = [adtime intValue];
             int seatidint = [seatid intValue];
-            if(seatidint == 0){
-                _seatIDLabel.text = @"尚未预定座位";
+//            if(seatidint == 0){
+//                _seatIDLabel.text = @"尚未预定座位";
+//            }else{
+//                NSLog(@"%@",seatid);
+//                _seatIDLabel.text = seatid;
+//            }
+            if(adtiment==1){
+                _TimeLabel.text=@"7:00-12:00";
+            }else if(adtiment==2){
+                _TimeLabel.text=@"12:00-17:00";
+            }else if(adtiment==3){
+                _TimeLabel.text=@"17:00-22:00";
             }else{
-                NSLog(@"%@",seatid);
-                _seatIDLabel.text = seatid;
+                _TimeLabel.text=@"尚未预定";
             }
-//            if(adtiment==1){
-//                _TimeLabel.text=@"7:00-12:00";
-//            }else if(adtiment==2){
-//                _TimeLabel.text=@"12:00-17:00";
-//            }else if(adtiment==3){
-//                _TimeLabel.text=@"17:00-22:00";
-//            }else{
-//                _TimeLabel.text=@"尚未预定";
-//            }
-//            
-//            if(stateint==1){
-//                _seatStateLabel.text=@"已预定";
-//            }else if(stateint==2){
-//                _seatStateLabel.text=@"已就坐";
-//            }else{
-//                _seatStateLabel.text=@"尚未预定";
-//            }
+            
+            if(stateint==1){
+                _seatStateLabel.text=@"已预定";
+            }else if(stateint==2){
+                _seatStateLabel.text=@"已就坐";
+            }else{
+                _seatStateLabel.text=@"尚未预定";
+            }
             
         }
     }];
