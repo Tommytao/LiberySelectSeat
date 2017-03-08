@@ -15,6 +15,8 @@
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
+@property (nonatomic, assign)NSString* username;
+
 - (void)saveContext;
 
 

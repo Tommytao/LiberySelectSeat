@@ -10,6 +10,8 @@
 		65254F6B1E6EF6C600BAEB52 /* ScanQR.m in Sources */ = {isa = PBXBuildFile; fileRef = 65254F691E6EF6C600BAEB52 /* ScanQR.m */; };
 		65254F6C1E6EF6C600BAEB52 /* ScanQR.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65254F6A1E6EF6C600BAEB52 /* ScanQR.xib */; };
 		65254F6E1E6EF83C00BAEB52 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65254F6D1E6EF83C00BAEB52 /* AVFoundation.framework */; };
+		65254F701E6F005C00BAEB52 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 65254F6F1E6F005C00BAEB52 /* line.png */; };
+		65254F721E70021100BAEB52 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65254F711E70021100BAEB52 /* libAFNetworking.a */; };
 		654228D01E5DBE2200CE285C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228CF1E5DBE2200CE285C /* main.m */; };
 		654228D31E5DBE2200CE285C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228D21E5DBE2200CE285C /* AppDelegate.m */; };
 		654228D61E5DBE2200CE285C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228D51E5DBE2200CE285C /* ViewController.m */; };
@@ -66,6 +68,8 @@
 		65254F691E6EF6C600BAEB52 /* ScanQR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQR.m; sourceTree = "<group>"; };
 		65254F6A1E6EF6C600BAEB52 /* ScanQR.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQR.xib; sourceTree = "<group>"; };
 		65254F6D1E6EF83C00BAEB52 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		65254F6F1E6F005C00BAEB52 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		65254F711E70021100BAEB52 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../Library/Developer/Xcode/DerivedData/LiberySelectSeat-doupneqsdxfgrecdytxaejggwtfy/Build/Products/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		654228CB1E5DBE2200CE285C /* LiberySelectSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiberySelectSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		654228CF1E5DBE2200CE285C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		654228D11E5DBE2200CE285C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65254F721E70021100BAEB52 /* libAFNetworking.a in Frameworks */,
 				65254F6E1E6EF83C00BAEB52 /* AVFoundation.framework in Frameworks */,
 				6DD8CB0525C7E8D6B3F05032 /* libPods-LiberySelectSeat.a in Frameworks */,
 			);
@@ -124,6 +129,7 @@
 		2470E15F3461CBE88FC23988 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65254F711E70021100BAEB52 /* libAFNetworking.a */,
 				65254F6D1E6EF83C00BAEB52 /* AVFoundation.framework */,
 				A56333F4478854C7AE1C5249 /* libPods-LiberySelectSeat.a */,
 			);
@@ -208,6 +214,7 @@
 		6559C8541E6C47F000B3F132 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				65254F6F1E6F005C00BAEB52 /* line.png */,
 				6559C8591E6C493D00B3F132 /* desk512.png */,
 				6559C85D1E6C528300B3F132 /* chair15.png */,
 			);
@@ -335,6 +342,7 @@
 			files = (
 				6559C82C1E6955FF00B3F132 /* Main.storyboard in Resources */,
 				654228E11E5DBE2200CE285C /* LaunchScreen.storyboard in Resources */,
+				65254F701E6F005C00BAEB52 /* line.png in Resources */,
 				6559C8671E6C62FC00B3F132 /* UserInfoViewController.xib in Resources */,
 				65254F6C1E6EF6C600BAEB52 /* ScanQR.xib in Resources */,
 				6559C84F1E698D6600B3F132 /* SSViewController.xib in Resources */,
@@ -588,6 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -603,6 +612,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};

@@ -10,6 +10,7 @@
 #import "AFHTTPSessionManager.h"
 #import "AFURLSessionManager.h"
 #import "SSViewController.h"
+#import "AppDelegate.h"
 
 #define kScreenWidth [[UIScreen mainScreen]bounds].size.width
 #define kScreenHeight [[UIScreen mainScreen]bounds].size.height
@@ -42,10 +43,12 @@
 
 -(void)loadWebRequest:(id) sender
 {
-    NSString *username = _nameField.text;
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    NSString *name = _nameField.text;
+    myDelegate.username = name;
     NSString *password = _passwordField.text;
     NSString *urlhead  =@"http://192.168.1.101:9090/Login?name=";
-    NSString *urlstring = [NSString stringWithFormat:@"%@&password=%@",username,password];
+    NSString *urlstring = [NSString stringWithFormat:@"%@&password=%@",myDelegate.username,password];
     NSString *urltext = [NSString stringWithFormat:@"%@%@",urlhead,urlstring];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];

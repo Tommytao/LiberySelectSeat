@@ -8,6 +8,10 @@
 
 #import "ScanQR.h"
 #import <AVFoundation/AVFoundation.h>
+#import "UserInfoViewController.h"
+#import "AFHTTPSessionManager.h"
+#import "AFURLSessionManager.h"
+#import "AppDelegate.h"
 #define kWidth [UIScreen mainScreen].bounds.size.width
 #define kHeight [UIScreen mainScreen].bounds.size.height
 #define customShowSize CGSizeMake(200, 200);
@@ -89,7 +93,7 @@
     //扫描框的位置和大小
     self.layerView = [AVCaptureVideoPreviewLayer layerWithSession:self.session];
     self.layerView.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    self.layerView.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
+    self.layerView.frame = CGRectMake(0, 0, 414, 736);
     // 将扫描框大小定义为属行, 下面会有调用
     self.layerViewSize = CGSizeMake(_layerView.frame.size.width, _layerView.frame.size.height);
     
@@ -107,20 +111,88 @@
         [self.session stopRunning];
         
         AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex : 0 ];
+        
+        NSString *StringAll = metadataObject.stringValue;
+        
+        NSArray*array = [StringAll componentsSeparatedByString:@","];
+        
+        NSString * FirstValue = [array firstObject];
+        NSString * SecondValue = [array lastObject];
+        int FirstInt = [FirstValue intValue];
+        int SecondInt = [SecondValue intValue];
+        int TimeInt = (FirstInt/6-3)*3600;
+        int SeatID = (SecondInt/5)-TimeInt/3600;
+        NSString *SeatIDString = [NSString stringWithFormat:@"%d",SeatID];
+        //网络请求
+        AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+        NSString *urlhead  =@"http://192.168.1.101:9090/userinfo?name=";
+        NSString *urltext = [NSString stringWithFormat:@"%@%@",urlhead,myDelegate.username];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+        
+        NSURL *URL = [NSURL URLWithString:urltext];
+        NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+        
+        NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+            if (error) {
+                NSLog(@"Error: %@", error);
+            } else {
+                NSLog(@"%@ %@",response,responseObject);
+                NSString *state = [(NSDictionary *)responseObject objectForKey:@"state"];
+                NSString *seatid = [(NSDictionary *)responseObject objectForKey:@"seatid"];
+                int stateint = [state intValue];
+                int seatidint = [seatid intValue];
+                if(stateint == 1 && seatidint == SeatID){
+                    NSString *urlsign  =@"http://192.168.1.101:9090/SignSeat?name=";
+                    NSString *urlstring = [NSString stringWithFormat:@"%@&seatid=%@",myDelegate.username,SeatIDString];
+                    NSString *urltext = [NSString stringWithFormat:@"%@%@",urlsign,urlstring];
+                    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+                    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+                    
+                    NSURL *URL = [NSURL URLWithString:urltext];
+                    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+                    
+                    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+                        if (error) {
+                            NSLog(@"Error: %@", error);
+                        } else {
+                            UIAlertView *alertsucceed = [[UIAlertView alloc]initWithTitle:@"提示" message:@"签到成功" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                            alertsucceed.tag=1;
+                            [alertsucceed show];
+                        }
+                    }];
+                    [dataTask resume];
+                    
+
+                }else if(stateint == 2){
+                    UIAlertView *alerted = [[UIAlertView alloc]initWithTitle:@"提示" message:@"已经签到过了" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                    alerted.tag=1;
+                    [alerted show];
+                    
+                }else{
+                    UIAlertView *alertwrong = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请先预约座位" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                    alertwrong.tag=1;
+                    [alertwrong show];
+                }
+                
+            }
+        }];
+        [dataTask resume];
         //输出扫描字符串
-        NSLog(@"%@",metadataObject.stringValue);
-        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"提示" message:[NSString stringWithFormat:@"%@", metadataObject.stringValue] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        [alert show];
+        NSLog(@"%@",SeatIDString);
     }
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (alertView.tag == 1) {
+        NSLog(@"此处跳转");
+        [self presentViewController:[[UserInfoViewController alloc] init] animated:true completion:^{
+            //跳转完成后需要执行的事件；
+        }];
+        
+    }
 }
-*/
+
 
 @end
