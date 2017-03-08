@@ -51,16 +51,15 @@
             NSString *adtime = [(NSDictionary *)responseObject objectForKey:@"adtime"];
             NSString *name = [(NSDictionary *)responseObject objectForKey:@"name"];
             _NameLabel.text = name;
-            NSLog(@"%@",state);
             int stateint = [state intValue];
             int adtiment = [adtime intValue];
             int seatidint = [seatid intValue];
-//            if(seatidint == 0){
-//                _seatIDLabel.text = @"尚未预定座位";
-//            }else{
-//                NSLog(@"%@",seatid);
-//                _seatIDLabel.text = seatid;
-//            }
+            if(seatidint == 0){
+                _seatIDLabel.text = @"尚未预定座位";
+            }else{
+                NSString *seatIDstring = [NSString stringWithFormat:@"%d",seatidint];
+                _seatIDLabel.text = seatIDstring;
+            }
             if(adtiment==1){
                 _TimeLabel.text=@"7:00-12:00";
             }else if(adtiment==2){
