@@ -11,6 +11,42 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSViewController">
             <connections>
+                <outlet property="SBtn1" destination="a7x-7n-2nl" id="y9T-hy-hEh"/>
+                <outlet property="SBtn10" destination="maT-3X-BU0" id="fQs-sP-EAd"/>
+                <outlet property="SBtn11" destination="LEo-j4-Xa3" id="EZg-KU-RfU"/>
+                <outlet property="SBtn12" destination="qdd-cA-fcp" id="dJq-lp-pwp"/>
+                <outlet property="SBtn13" destination="5vX-Jw-DfC" id="nYc-EQ-PLd"/>
+                <outlet property="SBtn14" destination="jtV-cD-xxi" id="YyG-9i-Bpm"/>
+                <outlet property="SBtn15" destination="jcX-eB-KVi" id="801-1Q-1Cx"/>
+                <outlet property="SBtn16" destination="Ewq-7K-wBJ" id="Oas-hH-nEx"/>
+                <outlet property="SBtn17" destination="NSC-ya-9cQ" id="UkQ-9y-AJB"/>
+                <outlet property="SBtn18" destination="mEQ-nI-Ke6" id="Ypy-Y3-v2A"/>
+                <outlet property="SBtn19" destination="PgG-kE-rbj" id="KrF-fA-cM6"/>
+                <outlet property="SBtn2" destination="lbg-ap-lzM" id="kKa-Mk-L2f"/>
+                <outlet property="SBtn20" destination="fCS-ev-DmH" id="zDC-ul-gPo"/>
+                <outlet property="SBtn21" destination="cHN-ss-NLO" id="wgk-P7-hPa"/>
+                <outlet property="SBtn22" destination="X3q-6t-1MT" id="VXR-30-V5T"/>
+                <outlet property="SBtn23" destination="rqf-1q-4Zx" id="ds2-8n-HVF"/>
+                <outlet property="SBtn24" destination="S4V-jP-llu" id="Ads-eh-YFc"/>
+                <outlet property="SBtn25" destination="eP3-IM-lrl" id="jGH-p6-3ts"/>
+                <outlet property="SBtn26" destination="mv2-b1-qjM" id="xRU-Y1-QF8"/>
+                <outlet property="SBtn27" destination="dU7-vu-l5f" id="XYh-PQ-cKn"/>
+                <outlet property="SBtn28" destination="edC-Oo-cnb" id="Cwh-2l-u6E"/>
+                <outlet property="SBtn29" destination="99f-VX-WUK" id="EPl-aJ-2kC"/>
+                <outlet property="SBtn3" destination="x7G-cr-FCR" id="RbM-vX-2pl"/>
+                <outlet property="SBtn30" destination="oh6-U4-36b" id="HE0-ha-hET"/>
+                <outlet property="SBtn31" destination="tEi-y9-ppm" id="Xwu-T4-3CU"/>
+                <outlet property="SBtn32" destination="uwt-bZ-6wW" id="dPm-v7-vLI"/>
+                <outlet property="SBtn33" destination="N9J-5U-B2X" id="wbI-pb-Yhj"/>
+                <outlet property="SBtn34" destination="Gzg-KC-Clg" id="fUI-4r-cEY"/>
+                <outlet property="SBtn35" destination="wHz-Zb-HLx" id="ui9-t2-CaJ"/>
+                <outlet property="SBtn36" destination="MNN-Eu-s13" id="NuU-hU-F5U"/>
+                <outlet property="SBtn4" destination="IcY-TM-2fB" id="e0c-QH-1im"/>
+                <outlet property="SBtn5" destination="HbK-vQ-f7R" id="byY-uv-p5N"/>
+                <outlet property="SBtn6" destination="3KC-yh-XK1" id="340-nh-8CZ"/>
+                <outlet property="SBtn7" destination="zHF-rw-DGx" id="irf-ia-An5"/>
+                <outlet property="SBtn8" destination="5FU-42-fA1" id="PU7-Pz-sA0"/>
+                <outlet property="SBtn9" destination="BtL-5t-7e0" id="jP6-dB-yAZ"/>
                 <outlet property="Titlelabel" destination="dil-tI-f9J" id="5Us-we-MWd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -80,7 +116,7 @@
                         <action selector="SBtn1:" destination="-1" eventType="touchUpInside" id="WcT-Sc-edh"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbg-ap-lzM">
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbg-ap-lzM">
                     <rect key="frame" x="71" y="173" width="47" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="chair15.png"/>
@@ -112,7 +148,7 @@
                         <action selector="SBtn7:" destination="-1" eventType="touchUpInside" id="x5d-ut-9Al"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FU-42-fA1">
+                <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FU-42-fA1">
                     <rect key="frame" x="208" y="253" width="47" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="chair15.png"/>

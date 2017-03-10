@@ -57,8 +57,7 @@
             if(seatidint == 0){
                 _seatIDLabel.text = @"尚未预定座位";
             }else{
-                NSString *seatIDstring = [NSString stringWithFormat:@"%d",seatidint];
-                _seatIDLabel.text = seatIDstring;
+                _seatIDLabel.text = seatid;
             }
             if(adtiment==1){
                 _TimeLabel.text=@"7:00-12:00";

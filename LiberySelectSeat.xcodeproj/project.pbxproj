@@ -13,6 +13,8 @@
 		65254F701E6F005C00BAEB52 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 65254F6F1E6F005C00BAEB52 /* line.png */; };
 		65254F721E70021100BAEB52 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65254F711E70021100BAEB52 /* libAFNetworking.a */; };
 		65254F791E703FC900BAEB52 /* LiberySelectSeatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228EB1E5DBE2200CE285C /* LiberySelectSeatTests.m */; };
+		65254F831E72E95300BAEB52 /* seat.png in Resources */ = {isa = PBXBuildFile; fileRef = 65254F821E72E95300BAEB52 /* seat.png */; };
+		65254F851E72E9C800BAEB52 /* seat1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65254F841E72E9C800BAEB52 /* seat1.png */; };
 		654228D01E5DBE2200CE285C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228CF1E5DBE2200CE285C /* main.m */; };
 		654228D31E5DBE2200CE285C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228D21E5DBE2200CE285C /* AppDelegate.m */; };
 		654228D61E5DBE2200CE285C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654228D51E5DBE2200CE285C /* ViewController.m */; };
@@ -66,6 +68,8 @@
 		65254F6D1E6EF83C00BAEB52 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		65254F6F1E6F005C00BAEB52 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		65254F711E70021100BAEB52 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../Library/Developer/Xcode/DerivedData/LiberySelectSeat-doupneqsdxfgrecdytxaejggwtfy/Build/Products/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
+		65254F821E72E95300BAEB52 /* seat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seat.png; sourceTree = "<group>"; };
+		65254F841E72E9C800BAEB52 /* seat1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seat1.png; sourceTree = "<group>"; };
 		654228CB1E5DBE2200CE285C /* LiberySelectSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiberySelectSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		654228CF1E5DBE2200CE285C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		654228D11E5DBE2200CE285C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 		6559C8541E6C47F000B3F132 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				65254F841E72E9C800BAEB52 /* seat1.png */,
+				65254F821E72E95300BAEB52 /* seat.png */,
 				65254F6F1E6F005C00BAEB52 /* line.png */,
 				6559C8591E6C493D00B3F132 /* desk512.png */,
 				6559C85D1E6C528300B3F132 /* chair15.png */,
@@ -291,6 +297,10 @@
 		654228C31E5DBE2100CE285C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+					2,
+				);
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Tommy;
 				TargetAttributes = {
@@ -338,10 +348,12 @@
 			files = (
 				6559C82C1E6955FF00B3F132 /* Main.storyboard in Resources */,
 				654228E11E5DBE2200CE285C /* LaunchScreen.storyboard in Resources */,
+				65254F851E72E9C800BAEB52 /* seat1.png in Resources */,
 				65254F701E6F005C00BAEB52 /* line.png in Resources */,
 				6559C8671E6C62FC00B3F132 /* UserInfoViewController.xib in Resources */,
 				65254F6C1E6EF6C600BAEB52 /* ScanQR.xib in Resources */,
 				6559C84F1E698D6600B3F132 /* SSViewController.xib in Resources */,
+				65254F831E72E95300BAEB52 /* seat.png in Resources */,
 				6559C85E1E6C528300B3F132 /* chair15.png in Resources */,
 				654228DE1E5DBE2200CE285C /* Assets.xcassets in Resources */,
 				6559C85A1E6C493D00B3F132 /* desk512.png in Resources */,
