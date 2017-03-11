@@ -61,6 +61,8 @@
     [super viewDidLoad];
     //获取网络数据
     [self backtofree];
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.Timetick = @"1";
     [self loadWebRequest:@"1":@"Time1"];
 
     // Do any additional setup after loading the view from its nib.
@@ -93,7 +95,6 @@
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     NSURL *URL = [NSURL URLWithString:urltext];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
-    
     NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
         if (error) {
             NSLog(@"Error: %@", error);
@@ -225,10 +226,98 @@
 }
 
 -(void)btnaction:(NSString*)btnid{
-        
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    NSString * Time;
+    if([myDelegate.Timetick isEqual: @"1"]){
+        Time = @"Time1";
+    }else if([myDelegate.Timetick  isEqual: @"2"]){
+        Time = @"Time2";
+    }else if([myDelegate.Timetick  isEqual: @"3"]){
+        Time = @"Time3";
+    }
+    NSString *urlhead  =@"http://192.168.1.101:9090/reserved";
+    NSString *urltime =@"&adTime=";
+    NSString *urlname =@"?name=";
+    NSString *urlseatid =@"&seatid=";
+    NSString *urltext = [NSString stringWithFormat:@"%@%@%@%@%@%@%@%@",urlhead,Time,urlname,myDelegate.username,urltime,myDelegate.Timetick,urlseatid,btnid];
+    //NSLog(@"%@",urltext);
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    NSURL *URL = [NSURL URLWithString:urltext];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        } else {
+            UIAlertView *alertSucceed = [[UIAlertView alloc]initWithTitle:@"提示" message:@"预定成功！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            alertSucceed.tag = 12;
+            [alertSucceed show];
+        }
+    }];
+    [dataTask resume];
 }
 
+-(void)checkseat:(NSString*)btnid{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    NSString * Time;
+    if([myDelegate.Timetick isEqual: @"1"]){
+        Time = @"Time1";
+    }else if([myDelegate.Timetick  isEqual: @"2"]){
+        Time = @"Time2";
+    }else if([myDelegate.Timetick  isEqual: @"3"]){
+        Time = @"Time3";
+    }
+    NSString *urlhead  =@"http://192.168.1.101:9090/checkseat";
+    NSString *urlid =@"?id=";
+    NSString *urltext = [NSString stringWithFormat:@"%@%@%@%@",urlhead,Time,urlid,btnid];
+    //NSLog(@"%@",urltext);
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    NSURL *URL = [NSURL URLWithString:urltext];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        } else {
+        NSString *seatid = [(NSDictionary *)responseObject objectForKey:@"id"];
+            if([seatid isEqualToString: btnid]){
+                UIAlertView *alertwrong = [[UIAlertView alloc]initWithTitle:@"提示" message:@"位置有人啦～～" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                [alertwrong show];
+            }else{
+                [self btnaction:btnid];
+            }
+        }
+    }];
+    [dataTask resume];
 
+}
+-(void)checkuserseat:(NSString*)btnid{
+    
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    NSString *urlhead  =@"http://192.168.1.101:9090/userinfo?name=";
+    NSString *urltext = [NSString stringWithFormat:@"%@%@",urlhead,myDelegate.username];
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    
+    NSURL *URL = [NSURL URLWithString:urltext];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        } else {
+            NSString *seatid = [(NSDictionary *)responseObject objectForKey:@"seatid"];
+            if ([seatid isEqualToString:@"0"]){
+                [self checkseat:btnid];
+            }else{
+                UIAlertView *alertwrong = [[UIAlertView alloc]initWithTitle:@"提示" message:@"你已经预定座位了" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                [alertwrong show];
+            }
+        }
+    }];
+    [dataTask resume];
+}
 - (IBAction)UserBtn:(UIButton *)sender {
     [self presentViewController:[[UserInfoViewController alloc] init] animated:true completion:^{
         //跳转完成后需要执行的事件；
@@ -237,112 +326,164 @@
 
 - (IBAction)Timebtn1:(UIButton *)sender {
     [self backtofree];
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.Timetick = @"1";
     [self loadWebRequest:@"1":@"Time1"];
 }
 
 
 - (IBAction)Timabtn2:(UIButton *)sender {
     [self backtofree];
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.Timetick = @"2";
     [self loadWebRequest:@"1":@"Time2"];
 }
 
 - (IBAction)Timebtn3:(UIButton *)sender {
     [self backtofree];
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    myDelegate.Timetick = @"3";
     [self loadWebRequest:@"1":@"Time3"];
 }
 
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if(alertView.tag == 12){
+        [self presentViewController:[[UserInfoViewController alloc] init] animated:true completion:^{
+            //跳转完成后需要执行的事件；
+        }];
+
+    }
+}
+
 
 
 - (IBAction)SBtn1:(UIButton *)sender {
+    
+    [self checkuserseat:@"1"];
 }
 - (IBAction)SBtn2:(UIButton *)sender {
+    [self checkuserseat:@"2"];
 }
 - (IBAction)SBtn3:(UIButton *)sender {
+    [self checkuserseat:@"3"];
 }
 - (IBAction)SBtn4:(UIButton *)sender {
+    [self checkuserseat:@"4"];
 }
 
 - (IBAction)SBtn5:(UIButton *)sender {
+    [self checkuserseat:@"5"];
 }
 
 - (IBAction)SBtn6:(UIButton *)sender {
+    [self checkuserseat:@"6"];
 }
 - (IBAction)SBtn7:(UIButton *)sender {
+    [self checkuserseat:@"7"];
 }
 - (IBAction)SBtn8:(UIButton *)sender {
+    [self checkuserseat:@"8"];
 }
 
 - (IBAction)SBtn9:(UIButton *)sender {
+    [self checkuserseat:@"9"];
 }
 
 - (IBAction)SBtn10:(UIButton *)sender {
+    [self checkuserseat:@"10"];
 }
 - (IBAction)SBtn11:(UIButton *)sender {
+    [self checkuserseat:@"11"];
 }
 - (IBAction)SBtn12:(UIButton *)sender {
+    [self checkuserseat:@"12"];
 }
 
 - (IBAction)SBtn13:(UIButton *)sender {
+    [self checkuserseat:@"13"];
 }
 
 - (IBAction)SBtn14:(UIButton *)sender {
+    [self checkuserseat:@"14"];
 }
 - (IBAction)SBtn15:(UIButton *)sender {
+    [self checkuserseat:@"15"];
 }
 - (IBAction)SBtn16:(UIButton *)sender {
+    [self checkuserseat:@"16"];
 }
 
 - (IBAction)SBtn17:(UIButton *)sender {
+    [self checkuserseat:@"17"];
 }
 
 - (IBAction)SBtn18:(UIButton *)sender {
+    [self checkuserseat:@"18"];
 }
 - (IBAction)SBtn19:(UIButton *)sender {
+    [self checkuserseat:@"19"];
 }
 - (IBAction)SBtn20:(UIButton *)sender {
+    [self checkuserseat:@"20"];
 }
 
 - (IBAction)SBtn21:(UIButton *)sender {
+    [self checkuserseat:@"21"];
 }
 
 - (IBAction)SBtn22:(UIButton *)sender {
+    [self checkuserseat:@"22"];
 }
 - (IBAction)SBtn23:(UIButton *)sender {
+    [self checkuserseat:@"23"];
 }
 - (IBAction)SBtn24:(UIButton *)sender {
+    [self checkuserseat:@"24"];
 }
 
 - (IBAction)SBtn25:(UIButton *)sender {
+    [self checkuserseat:@"25"];
 }
 
 - (IBAction)SBtn26:(UIButton *)sender {
+    [self checkuserseat:@"26"];
 }
 - (IBAction)SBtn27:(UIButton *)sender {
+    [self checkuserseat:@"27"];
 }
 
 
 - (IBAction)SBtn28:(UIButton *)sender {
+    [self checkuserseat:@"28"];
 }
 - (IBAction)SBtn29:(UIButton *)sender {
+    [self checkuserseat:@"29"];
 }
 - (IBAction)SBtn30:(UIButton *)sender {
+    [self checkuserseat:@"30"];
 }
 
 - (IBAction)SBtn31:(UIButton *)sender {
+    [self checkuserseat:@"31"];
 }
 
 - (IBAction)SBtn32:(UIButton *)sender {
+    [self checkuserseat:@"32"];
 }
 - (IBAction)SBtn33:(UIButton *)sender {
+    [self checkuserseat:@"33"];
 }
 
 - (IBAction)SBtn34:(UIButton *)sender {
+    [self checkuserseat:@"34"];
 }
 - (IBAction)SBtn35:(UIButton *)sender {
+    [self checkuserseat:@"35"];
 }
 
 - (IBAction)SBtn36:(UIButton *)sender {
+    [self checkuserseat:@"36"];
 }
 
 

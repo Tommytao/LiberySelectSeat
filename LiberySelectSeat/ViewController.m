@@ -61,7 +61,7 @@
         if (error) {
             NSLog(@"Error: %@", error);
         } else {
-            NSLog(@"%@ %@",response,responseObject);
+            //NSLog(@"%@ %@",response,responseObject);
             NSString *userid = [(NSDictionary *)responseObject objectForKey:@"id"];
             if(userid !=nil){
                 NSLog(@"登录成功");
@@ -85,6 +85,7 @@
         NSLog(@"此处跳转");
         [self presentViewController:[[SSViewController alloc] init] animated:true completion:^{
             //跳转完成后需要执行的事件；
+            [self.view endEditing:YES];
         }];
         
     }
@@ -98,11 +99,11 @@
 
 -(IBAction)backgroundTap:(id)sender
 {
-    [self.nameField resignFirstResponder];
-    [self.passwordField resignFirstResponder];
+    [self.view endEditing:YES];
 }
 
 - (IBAction)Login:(UIButton *)sender {
+    [self.view endEditing:YES];
     [self loadWebRequest:sender];
    
 }

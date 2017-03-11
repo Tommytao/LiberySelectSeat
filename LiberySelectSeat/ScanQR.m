@@ -64,6 +64,12 @@
    
     // Do any additional setup after loading the view from its nib.
 }
+- (IBAction)backBtn:(UIButton *)sender {
+    [self presentViewController:[[UserInfoViewController alloc] init] animated:true completion:^{
+        //跳转完成后需要执行的事件；
+    }];
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -93,7 +99,7 @@
     //扫描框的位置和大小
     self.layerView = [AVCaptureVideoPreviewLayer layerWithSession:self.session];
     self.layerView.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    self.layerView.frame = CGRectMake(0, 0, 414, 736);
+    self.layerView.frame = CGRectMake(0, 40, 414, 696);
     // 将扫描框大小定义为属行, 下面会有调用
     self.layerViewSize = CGSizeMake(_layerView.frame.size.width, _layerView.frame.size.height);
     

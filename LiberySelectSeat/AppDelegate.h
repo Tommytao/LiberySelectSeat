@@ -16,6 +16,8 @@
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
 @property (nonatomic, assign)NSString* username;
+@property (nonatomic, assign)NSString* Timetick;
+
 
 - (void)saveContext;
 
