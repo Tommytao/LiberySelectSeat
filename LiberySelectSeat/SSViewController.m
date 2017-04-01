@@ -63,7 +63,7 @@
     [self backtofree];
     AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
     myDelegate.Timetick = @"1";
-    [self loadWebRequest:@"1":@"Time1"];
+    [self loadWebRequest:@"1":@"1"];
 
     // Do any additional setup after loading the view from its nib.
 }
@@ -86,11 +86,12 @@
 }
 */
 
--(void)loadWebRequest:(NSString*)Time:(NSString*)Timestring
+-(void)loadWebRequest:(NSString*)Time:(NSString*)number
 {
     NSString *urlhead  =@"http://192.168.1.101:9090/seatinfo";
     NSString *urlend =@"?time=";
-    NSString *urltext = [NSString stringWithFormat:@"%@%@%@%@",urlhead,Timestring,urlend,Time];
+    NSString *urlnumber = @"&number=";
+    NSString *urltext = [NSString stringWithFormat:@"%@%@%@%@%@",urlhead,urlend,Time,urlnumber,number];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     NSURL *URL = [NSURL URLWithString:urltext];
@@ -227,19 +228,11 @@
 
 -(void)btnaction:(NSString*)btnid{
     AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-    NSString * Time;
-    if([myDelegate.Timetick isEqual: @"1"]){
-        Time = @"Time1";
-    }else if([myDelegate.Timetick  isEqual: @"2"]){
-        Time = @"Time2";
-    }else if([myDelegate.Timetick  isEqual: @"3"]){
-        Time = @"Time3";
-    }
     NSString *urlhead  =@"http://192.168.1.101:9090/reserved";
     NSString *urltime =@"&adTime=";
     NSString *urlname =@"?name=";
     NSString *urlseatid =@"&seatid=";
-    NSString *urltext = [NSString stringWithFormat:@"%@%@%@%@%@%@%@%@",urlhead,Time,urlname,myDelegate.username,urltime,myDelegate.Timetick,urlseatid,btnid];
+    NSString *urltext = [NSString stringWithFormat:@"%@%@%@%@%@%@%@",urlhead,urlname,myDelegate.username,urltime,myDelegate.Timetick,urlseatid,btnid];
     //NSLog(@"%@",urltext);
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
@@ -260,17 +253,10 @@
 
 -(void)checkseat:(NSString*)btnid{
     AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-    NSString * Time;
-    if([myDelegate.Timetick isEqual: @"1"]){
-        Time = @"Time1";
-    }else if([myDelegate.Timetick  isEqual: @"2"]){
-        Time = @"Time2";
-    }else if([myDelegate.Timetick  isEqual: @"3"]){
-        Time = @"Time3";
-    }
     NSString *urlhead  =@"http://192.168.1.101:9090/checkseat";
     NSString *urlid =@"?id=";
-    NSString *urltext = [NSString stringWithFormat:@"%@%@%@%@",urlhead,Time,urlid,btnid];
+    NSString *urltime=@"&time=";
+    NSString *urltext = [NSString stringWithFormat:@"%@%@%@%@%@",urlhead,urlid,btnid,urltime,myDelegate.Timetick];
     //NSLog(@"%@",urltext);
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
@@ -328,7 +314,7 @@
     [self backtofree];
     AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
     myDelegate.Timetick = @"1";
-    [self loadWebRequest:@"1":@"Time1"];
+    [self loadWebRequest:@"1":@"1"];
 }
 
 
@@ -336,14 +322,14 @@
     [self backtofree];
     AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
     myDelegate.Timetick = @"2";
-    [self loadWebRequest:@"1":@"Time2"];
+    [self loadWebRequest:@"1":@"2"];
 }
 
 - (IBAction)Timebtn3:(UIButton *)sender {
     [self backtofree];
     AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
     myDelegate.Timetick = @"3";
-    [self loadWebRequest:@"1":@"Time3"];
+    [self loadWebRequest:@"1":@"3"];
 }
 
 

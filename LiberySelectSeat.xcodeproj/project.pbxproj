@@ -311,6 +311,7 @@
 					};
 					654228E61E5DBE2200CE285C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GYALTS3C8F;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 654228CA1E5DBE2100CE285C;
 					};
@@ -624,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GYALTS3C8F;
 				INFOPLIST_FILE = LiberySelectSeatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeatTests;
@@ -636,6 +638,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GYALTS3C8F;
 				INFOPLIST_FILE = LiberySelectSeatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tommy.LiberySelectSeatTests;
